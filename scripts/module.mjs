@@ -7,6 +7,7 @@
 /**
  * Sub Modules
  */
+import {combatAnnouncements} from "./modules/combat_announcements.mjs"
 //import { MyClass } from './modules/my-class.js'
 
 /**
@@ -15,7 +16,7 @@
 //import { MyDialog } from './apps/my-dialog.js';
 export class MODULE {
   static SUB_MODULES = {
-    //MyLogger,
+    combatAnnouncements,
     //MyClass
   };
 
@@ -28,7 +29,7 @@ export class MODULE {
   }
 }
 
-
+const NAME="get-moving"
 
 /*
   Initialize Module

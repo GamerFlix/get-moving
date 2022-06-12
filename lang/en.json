@@ -1,0 +1,11 @@
+{
+    "setting.defaultNextSound.name":"Default next turn sound",
+    "setting.defaultNextSound.hint":"Default sound that is played when a user is up next. Is overwritten by sounds set in the user configuration",
+    "setting.defaultCurrentSound.name":"Default current turn sound",
+    "setting.defaultCurrentSound.hint":"Default sound that is played when it's a user's turn. Is overwritten by sounds set in the user configuration",
+    "setting.defaultCurrentMarker.name":"Default turn marker",
+    "setting.defaultCurrentMarker.hint":"Default animation that is played on the token who's combatant's turn it is. Is overwritten by the path set in the token config"
+
+
+    
+}

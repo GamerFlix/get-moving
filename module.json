@@ -2,7 +2,7 @@
     "name": "get-moving",
     "title": "Get Moving!",
     "description": "Various combat reminders",
-    "system": [],
+    "system": ["dnd5e"],
     "version": "1.0.0",
     "author": "Flix",
     "authors": [
