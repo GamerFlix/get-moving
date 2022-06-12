@@ -8,6 +8,7 @@
  * Sub Modules
  */
 import {combatAnnouncements} from "./modules/combat_announcements.mjs"
+import {Settings} from "./modules/settings.mjs"
 //import { MyClass } from './modules/my-class.js'
 
 /**
@@ -17,6 +18,7 @@ import {combatAnnouncements} from "./modules/combat_announcements.mjs"
 export class MODULE {
   static SUB_MODULES = {
     combatAnnouncements,
+    Settings
     //MyClass
   };
 
