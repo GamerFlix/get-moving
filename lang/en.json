@@ -4,8 +4,7 @@
     "setting.defaultCurrentSound.name":"Default current turn sound",
     "setting.defaultCurrentSound.hint":"Default sound that is played when it's a user's turn. Is overwritten by sounds set in the user configuration",
     "setting.defaultCurrentMarker.name":"Default turn marker",
-    "setting.defaultCurrentMarker.hint":"Default animation that is played on the token who's combatant's turn it is. Is overwritten by the path set in the token config"
-
-
-    
+    "setting.defaultCurrentMarker.hint":"Default animation that is played on the token who's combatant's turn it is. Is overwritten by the path set in the token config",
+    "announcement.current":"Get moving! It's {combatantName}'s turn!",
+    "announcement.next":"Get ready! {combatantName} is up next!"
 }

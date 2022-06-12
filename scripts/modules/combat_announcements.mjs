@@ -32,14 +32,13 @@ export class combatAnnouncements{
 
         // Run the relevant function for the current, previous and next combatants
         combatAnnouncements.runForOwners(combatants.current,(combatant)=>{
-            ui.notifications.info(`Get moving! It's ${combatant.name}'s turn!`)
-        
+            ui.notifications.info(game.i18n.format("announcement.current",{combatantName:combatant.name}))
+            
         
         })
         //combatAnnouncements.runForOwners(combatants.previous,()=>{ui.notifications.info("")})
         combatAnnouncements.runForOwners(combatants.next,(combatant)=>{
-            ui.notifications.info(`Get ready! ${combatant.name} is up next!`)
-        
+            ui.notifications.info(game.i18n.format("announcement.next",{combatantName:combatant.name})) 
         })
 
 
@@ -58,5 +57,11 @@ export class combatAnnouncements{
 
     static register(){
         Hooks.on("updateCombat",combatAnnouncements.getCombatants)
+        Hooks.on("updateCombat",(combat,changes)=>{ // Popout the tracker once the combat is started
+            if (changes.round === 1 && combat.turn === 0 && combat.started){
+                new CombatTracker().createPopout().render(true)
+            }
+        })
+        //Hooks.on("d")
     }
 }
