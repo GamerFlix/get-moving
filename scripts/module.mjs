@@ -29,9 +29,10 @@ export class MODULE {
   static build() {
     //all startup tasks needed before sub module initialization
   }
+  static NAME="get-moving"
 }
 
-const NAME="get-moving"
+
 
 /*
   Initialize Module
