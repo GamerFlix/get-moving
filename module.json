@@ -1,10 +1,10 @@
 {
-    "name": "fvtt-dual-track-module",
+    "name": "get-moving",
     "title": "FVTT Dual-Track Module Template",
     "description": "A template repository.",
     "system": [],
     "version": "1.0.0",
-    "author": "",
+    "author": "Flix",
     "authors": [
     ],
     "esmodules": [
