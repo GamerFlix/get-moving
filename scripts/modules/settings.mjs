@@ -3,7 +3,7 @@ import { MODULE } from "../module.mjs";
 export class Settings{
 
     static settingsDefinition(){
-        config=true
+        const config=true
         const settingsData={
             defaultNextSound:{scope:"world",config,default:"",type:String},
             defaultCurrentSound:{scope:"world",config,default:"",type:String},
