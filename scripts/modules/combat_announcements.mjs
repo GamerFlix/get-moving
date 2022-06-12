@@ -59,9 +59,12 @@ export class combatAnnouncements{
         Hooks.on("updateCombat",combatAnnouncements.getCombatants)
         Hooks.on("updateCombat",(combat,changes)=>{ // Popout the tracker once the combat is started
             if (changes.round === 1 && combat.turn === 0 && combat.started){
-                new CombatTracker().createPopout().render(true)
+                ui["combat"].renderPopout()
             }
         })
-        //Hooks.on("d")
+        Hooks.on("deleteCombat",(combat)=>{
+            const tracker=ui["combat"]
+            if (!!tracker._popout && (tracker.combats.length===0)) tracker._popout.close()
+        })
     }
 }
